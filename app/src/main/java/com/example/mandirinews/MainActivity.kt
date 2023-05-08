@@ -2,7 +2,6 @@ package com.example.mandirinews
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mandirinews.adapter.AllNewsAdapter
@@ -41,9 +40,9 @@ class MainActivity : AppCompatActivity() {
         val factory = ViewModelFactory.getInstance()
         headlineNewsViewModel = ViewModelProvider(this, factory)[HeadlineNewsViewModel::class.java]
 
-        headlineNewsViewModel.getHeadlineNews().observe(this, Observer {
+        headlineNewsViewModel.getHeadlineNews().observe(this) {
             headlineNewsAdapter.setData(it)
-        })
+        }
     }
 
     private fun getAllNews() {
@@ -58,9 +57,9 @@ class MainActivity : AppCompatActivity() {
         val factory = ViewModelFactory.getInstance()
         allNewsViewModel = ViewModelProvider(this, factory)[AllNewsViewModel::class.java]
 
-        allNewsViewModel.getAllNews().observe(this, Observer {
+        allNewsViewModel.getAllNews().observe(this) {
             allNewsAdapter.setData(it)
-        })
+        }
     }
 
 }

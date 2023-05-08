@@ -1,8 +1,6 @@
 package com.example.mandirinews.network
 
-import com.example.mandirinews.BuildConfig
 import com.example.mandirinews.BuildConfig.BASE_URL
-import com.example.mandirinews.BuildConfig.DEBUG
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

@@ -20,7 +20,7 @@
             android:id="@+id/iv_news"
             android:layout_width="100dp"
             android:layout_height="90dp"
-            tools:ignore="MissingConstraints"
+            tools:ignore="ContentDescription,MissingConstraints"
             tools:srcCompat="@tools:sample/avatars"
             android:scaleType="centerCrop" />
 

@@ -1,17 +1,18 @@
 package com.example.mandirinews.adapter
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.mandirinews.data.local.NewsEntity
 import com.example.mandirinews.databinding.ListAllNewsBinding
-import com.example.mandirinews.databinding.ListHeadlineBinding
 import com.example.mandirinews.utils.Utils
 
 class AllNewsAdapter : RecyclerView.Adapter<AllNewsAdapter.ViewHolder>() {
     private val newsEntity = ArrayList<NewsEntity>()
 
+    @SuppressLint("NotifyDataSetChanged")
     fun setData(data: List<NewsEntity>) {
         newsEntity.clear()
         newsEntity.addAll(data)
@@ -38,7 +39,7 @@ class AllNewsAdapter : RecyclerView.Adapter<AllNewsAdapter.ViewHolder>() {
 
     inner class ViewHolder(private val binding: ListAllNewsBinding) :
         RecyclerView.ViewHolder(binding.root) {
-        val context = itemView.context!!
+        private val context = itemView.context!!
         fun bind(data: NewsEntity) {
             with(binding) {
                 tvTitleNews.text = data.title

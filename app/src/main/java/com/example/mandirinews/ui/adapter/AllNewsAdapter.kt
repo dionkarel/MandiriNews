@@ -1,4 +1,4 @@
-package com.example.mandirinews.adapter
+package com.example.mandirinews.ui.adapter
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -19,11 +19,10 @@ class AllNewsAdapter : RecyclerView.Adapter<AllNewsAdapter.ViewHolder>() {
         notifyDataSetChanged()
     }
 
-
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): AllNewsAdapter.ViewHolder {
+    ): ViewHolder {
         val binding =
             ListAllNewsBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding)
@@ -51,5 +50,4 @@ class AllNewsAdapter : RecyclerView.Adapter<AllNewsAdapter.ViewHolder>() {
             }
         }
     }
-
 }

@@ -1,4 +1,4 @@
-package com.example.mandirinews.viewmodel
+package com.example.mandirinews.ui.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel

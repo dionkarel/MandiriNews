@@ -9,7 +9,6 @@ object EspressoIdlingResource {
     fun increment() {
         idlingResource.increment()
     }
-
     fun decrement() {
         idlingResource.decrement()
     }

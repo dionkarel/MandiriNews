@@ -1,4 +1,4 @@
-package com.example.mandirinews.adapter
+package com.example.mandirinews.ui.adapter
 
 import android.annotation.SuppressLint
 import android.view.LayoutInflater
@@ -23,7 +23,7 @@ class HeadlineNewsAdapter : RecyclerView.Adapter<HeadlineNewsAdapter.ViewHolder>
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): HeadlineNewsAdapter.ViewHolder {
+    ): ViewHolder {
         val binding =
             ListHeadlineBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding)

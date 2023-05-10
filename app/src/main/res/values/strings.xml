@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Mandiri News</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="this_is_news_title">THIS IS NEWS TITLE</string>
     <string name="date_release">date release</string>
     <string name="this_is_author">this is author</string>

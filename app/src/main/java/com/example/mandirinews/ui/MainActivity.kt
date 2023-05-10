@@ -1,15 +1,15 @@
-package com.example.mandirinews
+package com.example.mandirinews.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.mandirinews.adapter.AllNewsAdapter
-import com.example.mandirinews.adapter.HeadlineNewsAdapter
+import com.example.mandirinews.ui.adapter.AllNewsAdapter
+import com.example.mandirinews.ui.adapter.HeadlineNewsAdapter
 import com.example.mandirinews.databinding.ActivityMainBinding
-import com.example.mandirinews.viewmodel.AllNewsViewModel
-import com.example.mandirinews.viewmodel.HeadlineNewsViewModel
-import com.example.mandirinews.viewmodel.ViewModelFactory
+import com.example.mandirinews.ui.viewmodel.AllNewsViewModel
+import com.example.mandirinews.ui.viewmodel.HeadlineNewsViewModel
+import com.example.mandirinews.ui.viewmodel.ViewModelFactory
 
 class MainActivity : AppCompatActivity() {
 
